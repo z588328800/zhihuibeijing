@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_top"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"></android.support.v4.view.ViewPager>
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="#5000"
+        android:text="标题" />
+
+    <com.viewpagerindicator.CirclePageIndicator
+        android:id="@+id/c_indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:layout_marginBottom="1dp"
+        android:padding="4dp"
+        app:fillColor="#f00"
+        app:pageColor="#fff"
+        app:radius="5dp"></com.viewpagerindicator.CirclePageIndicator>
+</FrameLayout>

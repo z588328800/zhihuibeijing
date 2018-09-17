@@ -1,0 +1,5 @@
+include ':app'
+include ':ViewPagerIndicatorLibrary'
+include ':SlidingMenu_Lib'
+include ':library'
+include ':zXingCodeLibs'

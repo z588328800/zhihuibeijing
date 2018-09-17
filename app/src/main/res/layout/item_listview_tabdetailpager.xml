@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ImageView
+        android:id="@+id/iv_icon"
+        android:padding="5dp"
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/guide_1" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="264dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/iv_icon"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:padding="5dp"
+        android:text="fsdfad发大水发老师肯定积分阿斯顿发送到阿道夫阿斯蒂芬阿斯蒂芬ad啊大大发阿斯蒂芬啊拉开大书法家浪蝶狂蜂加贷款纠纷；奥斯卡多了几分；老师肯定积分；啊速度快解放；离开的房间就 "
+        android:textSize="15sp"
+        android:layout_alignParentRight="true" />
+
+    <TextView
+        android:id="@+id/tv_date"
+        android:padding="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/iv_icon"
+        android:text="2015-03-12 18:34"
+        android:textSize="11sp"
+        android:layout_alignLeft="@+id/tv_title" />
+</RelativeLayout>

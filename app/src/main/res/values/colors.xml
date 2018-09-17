@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="red">#f90707</color>
+    <color name="white">#ffffff</color>
+    <color name="gray">#969696</color>
+    <color name="gray1">#e9e9e7</color>
+    <color name="red_item">#E60200</color>
+
+
+    <!--以下为常用颜色配置-->
+    <color name="PrimaryColorL">#0e4af1</color>
+    <color name="PrimaryColorM">#3D6EF7</color>
+    <color name="PrimaryColorH">#FF0336C6</color>
+    <color name="SubColorL">#ffffff</color>
+    <color name="SubColorM">#ffffff</color>
+    <color name="SubColorH">#ffffff</color>
+    <color name="While">#ffffff</color>
+    <color name="Transparency">#00ffffff</color>
+    <color name="Gray">#545455</color>
+    <color name="Red">#ff0000</color>
+    <color name="Yellow">#ffe100</color>
+    <color name="Blue">#0000ff</color>
+    <color name="Green">#00fd01</color>
+    <color name="orange">#f4b940</color>
+    <color name="purple">#884599</color>
+    <color name="dark">#000</color>
+</resources>

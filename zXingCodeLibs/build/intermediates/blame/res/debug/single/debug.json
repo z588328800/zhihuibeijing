@@ -1,0 +1,30 @@
+[
+    {
+        "merged": "C:\\OneDriveShare\\OneDrive\\androidStudioProject\\zhihuibeijing\\zXingCodeLibs\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_launcher.png.flat",
+        "source": "C:\\OneDriveShare\\OneDrive\\androidStudioProject\\zhihuibeijing\\zXingCodeLibs\\src\\main\\res\\drawable-hdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\OneDriveShare\\OneDrive\\androidStudioProject\\zhihuibeijing\\zXingCodeLibs\\build\\intermediates\\res\\merged\\debug\\raw_beep.ogg.flat",
+        "source": "C:\\OneDriveShare\\OneDrive\\androidStudioProject\\zhihuibeijing\\zXingCodeLibs\\src\\main\\res\\raw\\beep.ogg"
+    },
+    {
+        "merged": "C:\\OneDriveShare\\OneDrive\\androidStudioProject\\zhihuibeijing\\zXingCodeLibs\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_mzw_camera_close.png.flat",
+        "source": "C:\\OneDriveShare\\OneDrive\\androidStudioProject\\zhihuibeijing\\zXingCodeLibs\\src\\main\\res\\drawable-hdpi\\mzw_camera_close.png"
+    },
+    {
+        "merged": "C:\\OneDriveShare\\OneDrive\\androidStudioProject\\zhihuibeijing\\zXingCodeLibs\\build\\intermediates\\res\\merged\\debug\\layout_activity_main.xml.flat",
+        "source": "C:\\OneDriveShare\\OneDrive\\androidStudioProject\\zhihuibeijing\\zXingCodeLibs\\src\\main\\res\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\OneDriveShare\\OneDrive\\androidStudioProject\\zhihuibeijing\\zXingCodeLibs\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_launcher.png.flat",
+        "source": "C:\\OneDriveShare\\OneDrive\\androidStudioProject\\zhihuibeijing\\zXingCodeLibs\\src\\main\\res\\drawable-mdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\OneDriveShare\\OneDrive\\androidStudioProject\\zhihuibeijing\\zXingCodeLibs\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_mzw_camera_open.png.flat",
+        "source": "C:\\OneDriveShare\\OneDrive\\androidStudioProject\\zhihuibeijing\\zXingCodeLibs\\src\\main\\res\\drawable-hdpi\\mzw_camera_open.png"
+    },
+    {
+        "merged": "C:\\OneDriveShare\\OneDrive\\androidStudioProject\\zhihuibeijing\\zXingCodeLibs\\build\\intermediates\\res\\merged\\debug\\layout_capture.xml.flat",
+        "source": "C:\\OneDriveShare\\OneDrive\\androidStudioProject\\zhihuibeijing\\zXingCodeLibs\\src\\main\\res\\layout\\capture.xml"
+    }
+]

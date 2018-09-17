@@ -1,0 +1,7 @@
+#Internal package file, do not edit.
+#Sat Sep 15 02:29:22 CST 2018
+0.baseType=DIRECTORY
+0.base=C\:\\OneDriveShare\\OneDrive\\androidStudioProject\\zhihuibeijing\\zXingCodeLibs\\build\\intermediates\\transforms\\dexMerger\\debug\\16
+0.path=classes.dex
+0.set=DEX
+count=1

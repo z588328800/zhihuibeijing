@@ -1,0 +1,90 @@
+//plugin在AS里取值一般为'com.android.library'或者'com.android.application'
+apply plugin: 'com.android.application'  //构建为lib
+apply plugin: 'com.mob.sdk'
+
+
+android {
+
+    compileSdkVersion 27 //编译需要SDK版本
+    defaultConfig {
+        applicationId "priv.zl.zhihuibeijing"
+        minSdkVersion 16                  //最小版本
+        targetSdkVersion 27                //目标版本
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+
+        sourceSets { //目录指向配置
+            main {
+                jniLibs.srcDirs = ['libs']
+            }
+        }
+
+    }
+
+
+    buildTypes { //build类型
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+
+MobSDK {
+    appKey "27c6329cedb5c"
+    appSecret "8648dd44ce83af8cd745e6ecadc1f427"
+    ShareSDK {
+        devInfo {
+            SinaWeibo {
+                appKey "568898243"
+                appSecret "38a4f8204cc784f81f9f0daaf31e02e3"
+                callbackUri "http://www.sharesdk.cn"
+                shareByAppClient true
+            }
+            TencentWeibo {
+                appKey "801307650"
+                appSecret "ae36f4ee3946e1cbb98d6965b0b2ff5c"
+                callbackUri "http://www.sharesdk.cn"
+            }
+            Email {}
+            Wechat {
+                appId "wx4868b35061f87885"
+                appSecret "64020361b8ec4c99936c0e3999a9f249"
+                userName "gh_afb25ac019c9"
+                path "pages/index/index.html?id=1"
+                withShareTicket true
+                miniprogramType 2
+                bypassApproval false
+            }
+            QQ {
+                appId "100371282"
+                appKey "aed9b0303e3ed1e27bae87c33761161d"
+                shareByAppClient true
+                bypassApproval false
+            }
+        }
+    }
+}
+
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'com.android.support:appcompat-v7:27.1.1'
+    implementation 'com.android.support:support-v4:27.1.1'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.2'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+    implementation 'com.jakewharton:butterknife:8.8.1'
+    implementation project(':SlidingMenu_Lib')
+    implementation files('libs/android-async-http-master.jar')
+    implementation files('libs/gson-2.3.1.jar')
+    implementation 'com.squareup.picasso:picasso:2.71828'
+    implementation project(':ViewPagerIndicatorLibrary')
+    implementation 'com.github.bumptech.glide:glide:4.8.0'
+    implementation files('libs/jcore-android-1.2.5.jar')
+    implementation files('libs/jpush-android-3.1.6.jar')
+}

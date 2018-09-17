@@ -1,0 +1,4 @@
+#Sat Sep 15 02:29:22 CST 2018
+base.0=C\:\\OneDriveShare\\OneDrive\\androidStudioProject\\zhihuibeijing\\zXingCodeLibs\\build\\intermediates\\transforms\\dexMerger\\debug\\16
+path.0=classes.dex
+renamed.0=classes.dex

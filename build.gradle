@@ -1,0 +1,41 @@
+//gradle是一个强大的项目构建工具，不仅可以构建Android，还可以构建java，C++等
+//实际上就是将Android开发所需要的插件、库等等联系在一起
+
+//android studio是单工程的开发模式
+//android studio中的application相当于eclipse里的workspace概念
+//android studio中的module相当于eclipse里的project概念
+
+buildscript {  //加载gradle脚本自身需要使用的资源，gradle从这里开始加载运行
+
+    repositories {
+        //设置中心库，中心库中有很多开源软件，设置中心库后，就可以在以下的dependencies中直接输入包名进行远程依赖。支持java依赖库管理（maven/ivy等）,用于module的依赖
+        google()    //google的远程依赖库
+        jcenter()   //推荐使用这个仓库
+        //jcenter是由JFrog公司提供的Bintray中的Java仓库。它是当前世界上最大的Java和Android开源软件构件仓库。 所有内容都通过内容分发网络（CDN）使用加密https连接获取。JCenter是Goovy Grape内的默认仓库，Gradle内建支持（jcenter()仓库），非常易于在（可能除了Maven之外的）其他构建工具内进行配置
+    }
+    //依赖包的定义。支持maven/ivy、远程、本地库、单文件，前面定义了repositories{}jcenter库，使用jcenter的依赖只需要按照
+    //类似于com.android.tools.build:gradle:1.0.0-rc2，gradle就会自动的往远程库下载相应的依赖。
+
+
+    dependencies {
+        //用以添加application运行所需要的依赖包，写入包名即可依赖（包括远程依赖），gradle构建时若发现本地没有该jar包则会去联网下载（以上添加的jcenter中心库会在查找范围内），放在SDK的目录下D:\android\sdk\extras\android\m2repository\com\android\support\appcompat-v7\25.0.0\
+        //此处表示依赖Android插件：gradle:3.1.4'
+        classpath 'com.android.tools.build:gradle:3.1.4'
+        // 注册MobSDK
+        classpath "com.mob.sdk:MobSDK:2018.0319.1724"
+
+    }
+}
+
+
+//多module的集中配置 ，这个配置影响范围是application中的所有build.gradle文件，在这里配置后，其他module的build.gradle就不需要再次配置了
+allprojects {
+    repositories {
+        google()
+        jcenter()
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
